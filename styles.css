@@ -3,9 +3,36 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
 }
+.movie-info {
+    display: flex;
+    flex-direction: column; /* Colocar el texto debajo de la imagen */
+    align-items: center;    /* Centrar el contenido horizontalmente */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
 
+.poster {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.info-text {
+    font-size: 10px;
+    text-align: center; /* Centrar el texto debajo de la imagen */
+}
+
+h1 {
+    color: #1c508d;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
@@ -44,14 +71,13 @@ body {
     background-color: #008000;
 }
 
-.especial {
-    background-color:#FFA500;
-}
+
 
 
 
 .selected {
-    border: 2px solid #000;
+    
+    background-color: #008000;
 }
 
 /* Leyenda organizada en una fila horizontal */

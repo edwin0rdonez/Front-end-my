@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa de Asientos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div class="movie-info">
+        <img src="jo0ker.jpg" alt="Joker Poster" class="poster">
+        <div class="info-text">
+            <h1>Joker: Folie á Deux</h1>
+            <p>Exclusiva para Mayores de 15 Años</p>
+            <p>Terra Plaza</p>
+            <p>8:00PM, jueves 3 de octubre 2024</p>
+            <p>2D - Subtitulado</p>
+        </div>
+    </div>
     <div class="container">
-        <h1>Joker: Folie á Deux</h1>
-        <p>Exclusiva para Mayores de 15 Años</p>
-        <p>Terra Plaza</p>
-        <p>8:00PM, jueves 3 de octubre 2024</p>
-        <p>2D - Subtitulado</p>
         <p>ESCOGER UBICACIÓN</p>
         <p>Número de entradas: <input type="number" id="num-entradas" value="3" min="1" max="10"></p>
         <div id="seating-map">
             <!-- Aquí irán los asientos generados dinámicamente -->
         </div>
         <div id="legend">
-            <div class="legend-item"></div>
+            <div class="legend-item">
                 <span class="seat libre"></span> Disponibles
             </div>
             <div class="legend-item">
                 <span class="seat ocupado"></span> No disponible
             </div>
-            <div class="legend-item">
-                <span class="seat especial"></span> Personas en condicion de discapacidad
-            </div>
+
             <div class="legend-item">
                 <span class="seat reservado"></span> Tus sillas
             </div>
-            
+
         </div>
         <button id="confirmar">Confirmar Asientos</button>
     </div>
 
+
     <script src="app.js"></script>
 </body>
+
 </html>
-
-
