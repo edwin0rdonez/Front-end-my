@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#seating-map {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.libre {
+    background-color: #3C3C3C3C;
+}
+
+.ocupado {
+    background-color: #0000ff;
+    cursor: not-allowed;
+}
+
+.reservado {
+    background-color: #008000;
+}
+
+.especial {
+    background-color:#FFA500;
+}
+
+
+
+.selected {
+    border: 2px solid #000;
+}
+
+/* Leyenda organizada en una fila horizontal */
+#legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    gap: 20px; /* Espacio entre cada ícono y descripción */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el asiento y su texto */
+}
+
+/* Tamaño más grande para los asientos en la leyenda */
+.legend-item .seat {
+    width: 30px;  /* Tamaño adecuado para los íconos de la leyenda */
+    height: 30px;
+}
