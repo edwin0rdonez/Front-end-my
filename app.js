@@ -37,6 +37,34 @@ document.getElementById('confirmar').addEventListener('click', function() {
     }
 });
 
+document.querySelector('.dropdown').addEventListener('click', function () {
+    this.classList.toggle('active');
+});
 
+// Seleccionamos los botones de confirmación y de pagar
+const confirmBtn = document.querySelector('.confirm-btn');
+const payBtn = document.querySelector('.pay-btn');
 
+// Añadimos un evento de clic al botón de confirmación
+confirmBtn.addEventListener('click', function () {
+    // Cambia el estilo del botón de confirmación
+    this.classList.toggle('active');
+    // Habilita el botón de pagar y cambia su estilo
+    if (this.classList.contains('active')) {
+        payBtn.classList.add('active');
+        payBtn.disabled = false;
+    } else {
+        payBtn.classList.remove('active');
+        payBtn.disabled = true;
+    }
+});
+
+// Añadimos un evento de clic al botón de pagar
+payBtn.addEventListener('click', function () {
+    if (payBtn.classList.contains('active')) {
+        // Redirige a otra página, por ejemplo, página de confirmación de pago
+        window.location.href = 'pagina-confirmacion.html';
+    }
+});
+s
 
