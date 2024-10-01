@@ -66,5 +66,20 @@ payBtn.addEventListener('click', function () {
         window.location.href = 'pagina-confirmacion.html';
     }
 });
-s
+
+
+
+function toggleDetalles() {
+    var detalles = document.getElementById("detalles");
+    var button = document.getElementById("toggleDetails");
+
+    if (detalles.style.display === "none") {
+        detalles.style.display = "block";
+        button.textContent = "Ocultar Detalles";
+    } else {
+        detalles.style.display = "none";
+        button.textContent = "Mostrar Detalles";
+    }
+}
+
 

@@ -20,7 +20,7 @@
             <p>2D - Subtitulado</p>
         </div>
     </div>
-    <div class="container">
+    <div class="container-mapa">
         <p>ESCOGER UBICACIÓN</p>
         <div class="screen"></div>
         <h5>Pantalla</h5>
@@ -43,13 +43,42 @@
         </div>
 
     </div>
-
+    <div class="factura-container">
+        <div class="factura" id="factura">
+            <h2>Total a pagar $12.800</h2>
+            <button id="toggleDetails" onclick="toggleDetalles()">Mostrar Detalles</button>
+            <!-- The collapsible section -->
+            <div class="detalles" id="detalles" style="display: none;">
+                <table>
+                    <tr>
+                        <td>Valor por Boleta</td>
+                        <td>$11.500</td>
+                    </tr>
+                    <tr>
+                        <td>Total boletas (1)</td>
+                        <td>$11.500</td>
+                    </tr>
+                    <tr>
+                        <td>Valor por servicio por Boleta</td>
+                        <td>$1.300</td>
+                    </tr>
+                    <tr>
+                        <td>Total valor servicio (1)</td>
+                        <td>$1.300</td>
+                    </tr>
+                    <tr>
+                        <td class="detalle">Total base devolución</td>
+                        <td class="detalle">$1.092</td>
+                    </tr>
+                    <tr>
+                        <td class="detalle">IVA Servicio 19%</td>
+                        <td class="detalle">$208</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-
-
-
-</body>
-<feather>
+    
     <div class="purchase-container">
         <div class="purchase-details">
             <p><strong>Joker: Folie à Deux</strong></p>
@@ -68,9 +97,8 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
-</feather>
+</body>
 
-</html>
+<script src="app.js"></script>
 
 </html>
